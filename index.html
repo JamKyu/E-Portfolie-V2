@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>James Kyu | E-Portfolio</title>
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="assets/icon.ico" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -170,15 +170,15 @@
             </div>
         </div>
       </div>
-      <img src="assets/semi circle.svg" class="shape shape--0">
+      <img src="assets/cross.svg" class="shape shape--0">
       <img src="assets/circle.svg" class="shape shape--1">
-      <img src="assets/squiggly.svg" class="shape shape--2">
+      <img src="assets/square.svg" class="shape shape--2">
       <img src="assets/circle.svg" class="shape shape--3">
       <img src="assets/triangle.svg" class="shape shape--4">
       <img src="assets/circle.svg" class="shape shape--5">
-      <img src="assets/squiggly.svg" class="shape shape--6">
+      <img src="assets/square.svg" class="shape shape--6">
       <img src="assets/circle.svg" class="shape shape--7">
-      <img src="assets/semi circle.svg" class="shape shape--8">
+      <img src="assets/cross.svg" class="shape shape--8">
     </section>
     <section id="projects">
       <div class="container">
@@ -278,7 +278,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer id="footer">
       <div class="container">
         <div class="row footer__row">
             <a href="#" class="footer__anchor">
@@ -296,7 +296,7 @@
               target="_blank"
               class="footer__social--link link__hover-effect link__hover-effect--white"
             >
-              <i class="fab fa-github"></i>
+            <i class="fab fa-github"></i>
               GitHub
             </a>
             <a
@@ -316,7 +316,19 @@
               Resume
             </a>
           </div>
+          <a href="#footer">
+            <button class="footer__cat" onclick="toggleFooterModal()">
+              Click for Cat
+            </button>
+          </a>
           <div class="footer__copyright">Made by James Kyu - 2022</div>
+          <div class="footer__modal">
+            <i class="fas fa-times footer__modal--exit click" onclick="toggleFooterModal()"></i>
+            <figure class="footer__modal--img--wrapper">
+              <img class="footer__modal--img" src="assets/kira.JPG">
+          </figure>
+          <h3 class="footer__modal--title">Kira</h3>
+          </div>
         </div>
       </div>
     </footer>

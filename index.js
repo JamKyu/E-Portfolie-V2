@@ -1,4 +1,5 @@
 let isModalOpen = false;
+let isFooterModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
 
@@ -58,6 +59,15 @@ function toggleModal() {
   isModalOpen = true;
   document.body.classList += " modal--open";
 }
+
+function toggleFooterModal() {
+  if (isFooterModalOpen) {
+    isFooterModalOpen = false;
+    return document.body.classList.remove("footer__modal--open");
+  }
+  isFooterModalOpen = true;
+  document.body.classList += " footer__modal--open";
+} 
 
 console.log(`
 #     #                          
