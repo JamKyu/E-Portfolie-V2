@@ -659,7 +659,11 @@ footer {
   color: white;
 }
 
-.footer__cat {
+.footer__copyright {
+  margin-top: 20px;
+}
+
+.footer__cat--btn {
   color: #fff;
   border: 3px solid white;
   text-transform: uppercase;
@@ -671,10 +675,10 @@ footer {
   outline: none;
   border-radius: 4px;
   padding: 10px 20px;
-  margin-bottom: 20px;
+  transition: all 300ms ease-in;
 }
 
-.footer__cat:hover {
+.footer__cat--btn:hover {
   transition: 300ms ease;
   color: #001f3f;
   background-color: #fff;
@@ -688,9 +692,8 @@ footer {
   height: 350px;
   border-radius: 20px;
   overflow: hidden;
-  visibility: hidden;
+  opacity: 0;
   z-index: -1;
-  transition: 300ms ease;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -698,14 +701,14 @@ footer {
 
 .footer__modal--open .footer__modal {
   z-index: 60;
-  visibility: visible;
-  transition: 1s ease;
+  opacity: 1;
+  transition: 1.2s ease-in;
 }
 
 .footer__modal--exit {
   position: absolute;
-  top: 12px;
-  right: 56px;
+  top: 8px;
+  right: 52px;
   color: white;
   font-size: 18px;
   z-index: 100;
@@ -720,8 +723,8 @@ footer {
 
 .footer__modal--img {
   width: 100%;
-  transform: scale(1.2);
-  padding-bottom: 420px;
+  transform: scale(1.1);
+  padding-bottom: 250px;
 }
 
 .footer__anchor,
@@ -730,8 +733,7 @@ footer {
 .footer__logo--img,
 .footer__cat {
   opacity: 1;
-  visibility: visible;
-  transition: 300ms 600ms;
+  transition: all 1.2s ease-in;
 }
 
 .footer__modal--open .footer__social--list,
@@ -740,8 +742,7 @@ footer {
 .footer__modal--open .footer__logo--img,
 .footer__modal--open .footer__cat {
   opacity: 0;
-  visibility: hidden;
-  transition: 300ms;
+  transition: all 300ms ease;
 }
 
 .footer__modal--title {
