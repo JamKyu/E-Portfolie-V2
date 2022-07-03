@@ -731,7 +731,7 @@ footer {
 .footer__cat {
   opacity: 1;
   visibility: visible;
-  transition: all 400ms 600ms;
+  transition: 300ms 600ms;
 }
 
 .footer__modal--open .footer__social--list,
@@ -757,6 +757,7 @@ footer {
 
 .shape {
   position: fixed;
+  opacity: 0.7;
 }
 
 .shape--0 {
@@ -824,6 +825,9 @@ footer {
   .modal__half {
     width: 100%;
     border-radius: 0;
+  }
+  .footer__modal--title {
+    padding-bottom: 12px;
   }
 }
 
