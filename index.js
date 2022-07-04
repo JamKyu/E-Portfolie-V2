@@ -67,7 +67,14 @@ function toggleFooterModal() {
   }
   isFooterModalOpen = true;
   document.body.classList += " footer__modal--open";
-} 
+}
+
+function closeFooterModal() {
+  if (isFooterModalOpen) {
+    isFooterModalOpen = false;
+    return document.body.classList.remove("footer__modal--open");
+  }
+}
 
 console.log(`
 #     #                          
