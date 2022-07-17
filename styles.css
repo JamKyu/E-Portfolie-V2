@@ -255,15 +255,21 @@ header {
   z-index: 1;
 }
 
+.hello-there {
+  color: black;
+}
+
 .header__para {
   font-size: 24px;
   line-height: 2;
   max-width: 450px;
+  margin-left: 4px;
 }
 
 .social__list {
   margin-top: 16px;
   display: flex;
+  margin-left: 4px;
 }
 
 .social__link {
@@ -745,7 +751,7 @@ footer {
   width: 150px;
   left: 136px;
   top: 50px;
-  transform: scale(1.5); 
+  transform: scale(1.5);
 }
 
 .footer__modal--img-dog {
@@ -890,6 +896,9 @@ footer {
   }
   .footer__modal--title {
     padding-bottom: 12px;
+  }
+  .scroll__icon {
+    display: none;
   }
 }
 
